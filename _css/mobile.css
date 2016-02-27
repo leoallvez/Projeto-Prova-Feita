@@ -1,0 +1,105 @@
+@charset "UTF-8";
+h2{
+	margin: 1% 6%;
+	font-size: 1.5em;
+}
+
+body{
+	background-image: none;
+}
+
+div{
+	background: #008B8B;
+	margin: 15% auto 1%;
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	display: block;
+	padding: 2%;
+	box-shadow: none;
+}
+
+p, a{
+	margin-left: 6%;
+}
+
+fieldset{
+	margin: 1% 6%;
+	border-radius: 3px;
+}
+/*input number m1*/
+input.a{
+	width: 18%;
+}
+/*input number dicliplina e integrada*/
+input.b{
+	margin-top: 8%;
+	width: 22%;
+}
+/*style of submit and links*/
+input.bot{
+	font-size: 90%;
+	text-indent: 0px;
+	padding: 1%;
+	margin: 100%;
+	margin: 3% 6%;
+	width: 20%;
+	min-height: 30px;
+	background-color: #4169E1;
+	border-radius: 3px;
+}
+/*the last input of the class .bot*/
+input.bot:last-child{
+	margin: 3% 1%;
+}
+
+#vot{
+	margin: 4% 0% 8% 8%;
+}
+
+table{
+	height: auto;
+	border: 0px;
+	padding: 6%;
+}
+
+fieldset.escolha{
+	float: right;
+	min-width: 50%;
+	margin: 3% 1%;
+	display: inline;
+}
+
+input[type="radio"]{
+	width: 10%;
+	display: block-inline;
+	margin-top: 1%;
+
+}
+
+.escolha label{
+	font-size: 82%;
+}
+
+p#avi{
+	font-size: 75%;
+	display: block;
+}
+
+#foot{
+	display: none;
+}
+
+/*#foot{
+	color: #fff;
+   	opacity: 1;
+   	padding: 1%;
+   	margin: 1%; 
+   	font-size: 0.7em;
+   	margin-bottom: 0;
+   	position: relative;
+}*/
+
+
+
+

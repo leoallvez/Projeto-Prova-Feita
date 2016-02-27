@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="">
+		<script language="Javascript">
+			var YY = 2016;
+			var MM = 9;
+			var DD = 5;
+			var HH = 23;
+			var MI = 59;
+			var SS = 59; 
+
+			function atualizaContador(){  
+				var hoje = new Date();  
+				var futuro = new Date(YY,MM-1,DD,HH,MI,SS);   
+				var ss = parseInt((futuro - hoje) / 1000);  
+				var mm = parseInt(ss / 60);  
+				var hh = parseInt(mm / 60);  
+				var dd = parseInt(hh / 24);   
+				ss = ss - (mm * 60);  
+				mm = mm - (hh * 60);  
+				hh = hh - (dd * 24);   
+				var faltam = '';  
+				faltam += (dd && dd > 1) ? 'Faltam '+dd+' dias para a prova Integrada, ' : (dd == 1 ? 'Falta 1 dia para a prova Integrada, ' : '');  
+				/*faltam += (toString(hh).length) ? hh+' hr, ' : '';  
+				faltam += (toString(mm).length) ? mm+' min e ' : '';  
+				faltam += ss+' seg';*/  
+
+	 			if (dd+hh+mm+ss > 0){
+					document.getElementById('contador').innerHTML = faltam;	
+					setTimeout(atualizaContador,1000);  
+	 			}else{
+					document.getElementById('contador').innerHTML = 'A Integrada é Hoje!';	
+					 setTimeout(atualizaContador,1000);  
+				}
+			}
+		</script>
+	</head>
+	<body onLoad="atualizaContador()">
+		Informe a data:
+		<input size="1" onChange="DD=this.value" style="text-align: center" /> /
+		<input size="1" onChange="MM=this.value" style="text-align: center" /> /
+		<input size="4" onChange="YY=this.value" style="text-align: center" /> às
+		<input size="1" onChange="HH=this.value" style="text-align: center" /> :
+		<input size="1" onChange="MI=this.value" style="text-align: center" /> :
+		<input size="1" onChange="SS=this.value" style="text-align: center" /><br /><br>
+		<span id="contador"></span>
+	</body>
+</html>
