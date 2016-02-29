@@ -12,8 +12,7 @@
 	<body>
 		<?php include "_php/header.php";?>
 		<div id="principal">
-			<form method="get" action="result.php">
-				
+			<form method="get" action="resultados.php">
 				<fieldset>
 					<legend><strong>M1</strong></legend>
 					<label for="nm1">Nota M1:</label></br>
@@ -24,7 +23,7 @@
 				<fieldset>
 					<legend><strong>M2</strong></legend>
 					<fieldset class="diciplina">
-						<legend>Diciplina</legend>
+						<legend>Avaliação de Disciplina</legend>
 						<input type="number" name="nd" value="" id="nnd" list="lista" step="0.1" 
 						min="0" max="10" onFocus="limpa('nnd')" onClick="aviso('obs-um',true)" onBlur="aviso('obs-um',false)" 
 						 placeholder="0.0" class="b"/>

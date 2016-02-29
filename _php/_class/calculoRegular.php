@@ -24,9 +24,9 @@ class CalculoRegular extends Calculo{
 		return $this->ni;
 	}
 
-	#Essw metodo calcula a nota da m2.
+	#Esse metodo calcula a nota da m2.
 	protected function calcularM2(){
-		$this->m2 = number_format((($this->nd * 0.70 )+( $this->ni * 0.30)),2);
+		$this->m2 = number_format((($this->nd * 0.70 )+( $this->ni * 0.30)),1);
 	}
 
 	public function getM2(){
@@ -91,6 +91,37 @@ class CalculoRegular extends Calculo{
 		}
 		return $nd;
 	}
+
+	/*Esse metodo retorna a nota min. que o aluno tem 
+	que tirar na Integrada para ficar de exame.*/
+	public function calcularMinIntegradaExame(){
+		$ni = 0;
+		while(true){
+			$m2 = number_format((($this->nd * 0.70 )+( $ni * 0.30)),2);
+			$me = number_format((($this->m1 + ($m2 * 2)) / 3),2);
+			if($me >= 3.00){
+				return number_format($ni,1);
+			}
+			$ni = $ni + 0.01;
+		}
+		return $ni;
+	}
+
+	/*Esse metodo retorna a nota min. que o aluno tem 
+	que tirar na prova diciplinar para ficar de exame.*/
+	public function calcularMinDisciplinaExame(){
+		$nd = 0;
+		while(true){
+			$m2 = number_format((($nd * 0.70 )+( $this->ni * 0.30)),2);
+			$me = number_format((($this->m1 + ($m2 * 2)) / 3),2);
+			if($me >= 3.00){
+				return number_format($nd,1);
+			}
+			$nd = $nd + 0.01;
+		}
+		return $nd;
+	}
+
 	/*Esse metodo mostra a situação final do aluno*/
 	public function mostrarStatus(){
 		if($this->me >= 5){
