@@ -11,10 +11,8 @@
         <a href="index.php" title="Inicio">Início</a>
       </li>
       <li>
-        <a href="#" title="Ajuda">Ajuda</a>
+        <a href="sobre.php" title="Sobre">Sobre</a>
       </li>
-      <li>
-        <a href="#" title="Sobre">Sobre</a>
     </ul>
   </nav>
 </header>
