@@ -36,7 +36,7 @@
 				<th colspan='4' id='d'>Dúvidas e sugestões:</th>
 				<tr>
 			    	<td>
-			    		<p>leoallvez@hotmail.com</p>
+			    		<p class='e'>leoallvez@hotmail.com</p>
 			    	</td>
 				</tr>
 			</table>

@@ -148,16 +148,17 @@ td, th{
 	border: 1px solid #00FFFF;
 	padding: 1%;
 	border-radius: 3px;
-	min-width: 10%;
+	min-width: 12%;
 }
 /*lacuna direita da tabela*/
-td#d{
+.d{
 	text-align: center;
 	color: #fff;
 	background-image: linear-gradient(to bottom,#008B8B,#20B2AA);
 }
 /*lacuna esquerda da tabela*/
-td#e{
+.e{
+  text-align: left;
 	color: #00FFFF;
 }
 
@@ -353,6 +354,17 @@ input#control-nav {
   position: fixed;
   bottom: 0px;
   transition: all 1s;
+}
+
+#foot a{
+  text-decoration: none;
+  text-indent: 0;
+  margin 0;
+  transition: all 1s;
+}
+
+#foot a:hover{
+  color: #00FFFF;  
 }
 
 @media screen and (max-width: 800px){

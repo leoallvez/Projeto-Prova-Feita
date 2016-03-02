@@ -25,13 +25,13 @@
 					<fieldset class="diciplina">
 						<legend>Avaliação de Disciplina</legend>
 						<input type="number" name="nd" value="" id="nnd" list="lista" step="0.1" 
-						min="0" max="10" onFocus="limpa('nnd')" onClick="aviso('obs-um',true)" onBlur="aviso('obs-um',false)" 
-						 placeholder="0.0" class="b"/>
+						min="0" max="10" onFocus="muda('nnd','rd')" onClick="aviso('obs-um',true)" 
+						onBlur="aviso('obs-um',false)" placeholder="0.0" class="b"/>
 						<?php notas(); ?>
 						<fieldset class="escolha">
 							<legend>Realizada</legend>
 							<label for="drn">não</label>
-							<input type="radio" name="rd" id="drn" value="n" checked/>
+							<input type="radio" name="rd" id="drn" value="n" onClick="zera2('nnd')" checked/>
 							<label for="dry">sim</label>
 							<input type="radio" name="rd" id="dry" value="s"/>
 						</fieldset>
@@ -40,13 +40,13 @@
 					<fieldset class="diciplina">
 						<legend>Integrada</legend>
 						<input type="number" name="ni" value="" id="nni" list="lista" step="0.1" 
-						min="0" max="10" onFocus="limpa('nni')" onClick="aviso('obs-dois',true)" onBlur="aviso('obs-dois',false)" 
-						placeholder="0.0" class="b"/>
+						min="0" max="10" onFocus="muda('nni','ri')" onClick="aviso('obs-dois',true)" 
+						onBlur="aviso('obs-dois',false)" placeholder="0.0" class="b"/>
 						<?php notas(); ?>
 						<fieldset class="escolha">
 							<legend>Realizada</legend>
 							<label for="irn">não</label>
-							<input type="radio" name="ri" id="irn" value="n" checked/>
+							<input type="radio" name="ri" id="irn" value="n" onClick="zera2('nni')" checked/>
 							<label for="iry">sim</label>
 							<input type="radio" name="ri" id="iry" value="s"/>
 						</fieldset>

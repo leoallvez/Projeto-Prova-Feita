@@ -31,123 +31,134 @@
 				}else{
 					$n = new calculoRegular($m1, $nd, $ni);		
 				}
-				
+				#Váriaveis usadas nas criação da tabela dinamica.
+				$texto1 = "Nota avaliação de Disciplina: ";
+				$texto2 = "Parcial da M2: ";
+				$texto3 = "Parcial da Média Final: ";
+				$texto4 = "Você tirou notas muito baixas na M1 e na avaliação de Disciplina 
+				           essa é nota mínima você terá que tirar na Integrada para ficar de exame: ";
+				$texto5 = "Nota avaliação de Disciplina: ";
+				$texto6 = "Nota mínima integrada para passar direto: ";
+				$texto7 = "Nota Integrada ";
+				$texto8 =  "Você tirou notas muito baixas na M1 e Integrada essa é nota mínima 
+						   você tem que tirar na avaliação de Disciplina para ficar de exame: ";
+				$texto9 = "As notas mínima que você que tem que tirar na avaliação de Disciplina 
+						   e Integrada para passar direto são: ";	
 			?>
 			<table> 
 				<th colspan='4' id='d'>Resultados:</th>
 				<tr>
-			    	<td id='e'>Nota M1: </td> 
-			    	<td id='d'><?= $n->getM1(); ?></td>
+			    	<td class='e'>Nota M1: </td> 
+			    	<td class='d'><?= $n->getM1(); ?></td>
 				</tr>
 				<?php
 					if($rd == "s" && $ri == "n"){
 						if($n->calcularMinIntegrada() > 10){
 							echo "<tr>";	
-							echo "<td id='e'>Nota avaliação de Disciplina: </td>";
-				    		echo "<td id='d'>".$n->getNd()."</td>";
+							echo "<td class='e'>".$texto1."</td>";
+				    		echo "<td class='d'>".$n->getNd()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Parcial da M2:</td>";
-							echo "<td id='d'>".$n->getM2()."</td>";
+							echo "<td class='e'>".$texto2."</td>";
+							echo "<td class='d'>".$n->getM2()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Parcial da Média Final:</td>";
-							echo "<td id='d'>".$n->getMe()."</td>";
+							echo "<td class='e'>".$texto3."</td>";
+							echo "<td class='d'>".$n->getMe()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Você tirou notas muito baixas na M1 e na avaliação de Disciplina 
-							essa é nota mínima você tem que tirar na Integrada para ficar de exame:</td>";
-							echo "<td id='d'>".$n->calcularMinIntegradaExame()."</td>";
+							echo "<td class='e'>".$texto4."</td>";
+							echo "<td class='d'>".$n->calcularMinIntegradaExame()."</td>";
 							echo "</tr>";
 						}else{
 							echo "<tr>";	
-							echo "<td id='e'>Nota avaliação de Disciplina: </td>";
-				    		echo "<td id='d'>".$n->getNd()."</td>";
+							echo "<td class='e'>".$texto1."</td>";
+				    		echo "<td class='d'>".$n->getNd()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Parcial da M2:</td>";
-							echo "<td id='d'>".$n->getM2()."</td>";
+							echo "<td class='e'>".$texto2."</td>";
+							echo "<td class='d'>".$n->getM2()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Parcial da Média Final:</td>";
-							echo "<td id='d'>".$n->getMe()."</td>";
+							echo "<td class='e'>".$texto3."</td>";
+							echo "<td class='d'>".$n->getMe()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Nota Minima Integrada:</td>";
-							echo "<td id='d'>".$n->calcularMinIntegrada()."</td>";
+							echo "<td class='e'>".$texto6."</td>";
+							echo "<td class='d'>".$n->calcularMinIntegrada()."</td>";
 							echo "</tr>";
 						}
 					}elseif($rd == "n" && $ri == "s"){
 						if($n->calcularMinDisciplina() > 10){
 							echo "<tr>";	
-							echo "<td id='e'>Nota Integrada: </td>";
-				    		echo "<td id='d'>".$n->getNi()."</td>";
+							echo "<td class='e'>".$texto7."</td>";
+				    		echo "<td class='d'>".$n->getNi()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Parcial da M2:</td>";
-							echo "<td id='d'>".$n->getM2()."</td>";
+							echo "<td class='e'>".$texto2."</td>";
+							echo "<td class='d'>".$n->getM2()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Parcial da Média Final:</td>";
-							echo "<td id='d'>".$n->getMe()."</td>";
+							echo "<td class='e'>".$texto3."</td>";
+							echo "<td class='d'>".$n->getMe()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Você tirou notas muito baixas na M1 e Integrada essa é 
-							nota mínima você tem que tirar na avaliação de Disciplina para ficar de exame:</td>";
-							echo "<td id='d'>".$n->calcularMinDisciplinaExame()."</td>";
+							echo "<td class='e'>".$texto8."</td>";
+							echo "<td class='d'>".$n->calcularMinDisciplinaExame()."</td>";
 							echo "</tr>";	
 						}else{
 							echo "<tr>";	
-							echo "<td id='e'>Nota Integrada: </td>";
-				    		echo "<td id='d'>".$n->getNi()."</td>";
+							echo "<td class='e'>".$texto7."</td>";
+				    		echo "<td class='d'>".$n->getNi()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Parcial da M2:</td>";
-							echo "<td id='d'>".$n->getM2()."</td>";
+							echo "<td class='e'>".$texto2."</td>";
+							echo "<td class='d'>".$n->getM2()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Parcial da Média Final:</td>";
-							echo "<td id='d'>".$n->getMe()."</td>";
+							echo "<td class='e'>".$texto3."</td>";
+							echo "<td class='d'>".$n->getMe()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Nota mínima Integrada:</td>";
-							echo "<td id='d'>".$n->calcularMinDisciplina()."</td>";
+							echo "<td class='e'>".$texto6."</td>";
+							echo "<td class='d'>".$n->calcularMinDisciplina()."</td>";
 							echo "</tr>";
 						}
 					}else{
 						if($rd == "n" && $ri == "n"){
 							echo "<tr>";
-							echo "<td id='e'>Parcial da Média Final:</td>";
-							echo "<td id='d'>".$n->getMe()."</td>";
+							echo "<td class='e'>".$texto2."</td>";
+							echo "<td class='d'>".$n->getMe()."</td>";
 							echo "</tr>";
-							echo "<td id='e'>As notas mínima que você que tem que tirar 
-							na avaliação de Disciplina e Integrada para passar direto são:</td>";
-					    	echo "<td id='d'>".$n->calcularMin()."</td>";
+							echo "<tr>";
+							echo "<td class='e'>".$texto9."</td>";
+					    	echo "<td class='d'>".$n->calcularMin()."</td>";
+					    	echo "</tr>";
 						}else{
 							echo "<tr>";	
-							echo "<td id='e'>Nota avaliação de Disciplina: </td>";
-				    		echo "<td id='d'>".$n->getNd()."</td>";
+							echo "<td class='e'>".$texto1."</td>";
+				    		echo "<td class='d'>".$n->getNd()."</td>";
 							echo "</tr>";
 							echo "<tr>";	
-							echo "<td id='e'>Nota Integrada: </td>";
-				    		echo "<td id='d'>".$n->getNi()."</td>";
+							echo "<td class='e'>".$texto7."</td>";
+				    		echo "<td class='d'>".$n->getNi()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Nota M2:</td>";
-							echo "<td id='d'>".$n->getM2()."</td>";
+							echo "<td class='e'>".$texto2."</td>";
+							echo "<td class='d'>".$n->getM2()."</td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td id='e'>Média Final:</td>";
-							echo "<td id='d'>".$n->getMe()."</td>";
+							echo "<td class='e'>Média Final:</td>";
+							echo "<td class='d'>".$n->getMe()."</td>";
 							echo "</tr>";
-							echo "<td id='e'>As notas mínimas na avaliação de Disciplina e Integrada para
-							passar direto eram:</td>";
-					    	echo "<td id='d'>".$n->calcularMin()."</td>";
+							echo "<tr>";
+							echo "<td class='e'>".$texto9."</td>";
+					    	echo "<td class='d'>".$n->calcularMin()."</td>";
+					    	echo "</tr>";
 					    	echo "<tr>";
-							echo "<td id='e'>Situação do Aluno:</td>";
-							echo "<td id='d'>".$n->mostrarStatus()."</td>";
+							echo "<td class='e'>Situação do Aluno:</td>";
+							echo "<td class='d'>".$n->mostrarStatus()."</td>";
 							echo "</tr>";
-
 						}
 					}
 				?>	
