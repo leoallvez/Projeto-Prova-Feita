@@ -151,10 +151,6 @@
 							echo "<td class='e'>Média Final:</td>";
 							echo "<td class='d'>".$n->getMe()."</td>";
 							echo "</tr>";
-							echo "<tr>";
-							echo "<td class='e'>".$texto9."</td>";
-					    	echo "<td class='d'>".$n->calcularMin()."</td>";
-					    	echo "</tr>";
 					    	echo "<tr>";
 							echo "<td class='e'>Situação do Aluno:</td>";
 							echo "<td class='d'>".$n->mostrarStatus()."</td>";

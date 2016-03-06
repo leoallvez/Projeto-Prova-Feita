@@ -38,9 +38,10 @@ function muda(id,radio){
 	if(v == "0"){
 		document.getElementById(id).value = "";
 	}
-	//Altera o radio Buttom. 
+	//Altera o input radio . 
 	document.forms[0][radio][1].checked = 1;
 }
+
 
 
 

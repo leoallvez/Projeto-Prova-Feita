@@ -376,5 +376,10 @@ input#control-nav {
   }
 }
 
+.fb-comments{
+  display: block;
+  font-size: 30px;
+  background: red;
+}
 
 

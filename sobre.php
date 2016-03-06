@@ -15,7 +15,7 @@
 				<th colspan='4' id='d'>Sobre:</th>
 				<tr>
 			    	<td>
-			    		<p>
+			    		<p class="e">
 			    			Prova Feita é uma aplicação web de código aberto desenvolvida 
 			    			por Leonardo Pereira Alves, que visa auxiliar os alunos da 
 			    			Universidade de Mogi das Cruzes (UMC) no cálculo e administração 
@@ -26,7 +26,7 @@
 				<th colspan='4' id='d'>Como funciona:</th>
 				<tr>
 			    	<td>
-			    		<p>
+			    		<p class="e">
 			    			Conforme o aluno tem acesso das notas das suas avaliações feitas, 
 			    			ele poderá calcular quais serão as notas mínimas terá que tirar nas 
 			    			próximas avaliações para passar direto. 
@@ -36,7 +36,7 @@
 				<th colspan='4' id='d'>Dúvidas e sugestões:</th>
 				<tr>
 			    	<td>
-			    		<p class='e'>leoallvez@hotmail.com</p>
+			    		<p class='e'>suporte@provafeita.16mb.com</p>
 			    	</td>
 				</tr>
 			</table>
