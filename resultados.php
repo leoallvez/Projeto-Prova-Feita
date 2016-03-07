@@ -32,7 +32,7 @@
 				    essa é nota mínima você terá que tirar na Integrada para ficar de exame: ";
 				}elseif($rd == 'n' && $ri == 's'){
 					$n = new calculoRegular($m1, 0, $ni);
-					$texto[0] = "Nota Integrada ";
+					$texto[0] = "Nota Integrada: ";
 					$texto[1] = "Parcial da M2: ";
 					$texto[2] = "Parcial da Média Final: ";
 					$texto[3] = "Nota mínima avaliação de Disciplina para passar direto: ";
@@ -46,7 +46,7 @@
 				}else{
 					$n = new calculoRegular($m1, $nd, $ni);
 					$texto[0] = "Nota avaliação de Disciplina: ";
-					$texto[1] = "Nota Integrada ";
+					$texto[1] = "Nota Integrada: ";
 				}
 			?>
 			<table> 
