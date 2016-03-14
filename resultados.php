@@ -160,7 +160,7 @@
 				<?php endif; ?>
 			</table>
 			</br>
-			<a class='bot' id='vot'href='javascript:history.go(-1)'>Voltar</a>
+			<a class='bot' id='vot'href='index.php'>Voltar</a>
 		</div>
 		<?php include "_php/footer.php"; ?>
 	</body>

@@ -88,7 +88,8 @@ input.b{
 	width: 23%;
 	height: 15%;
 	border-radius: 3px;
-	transition: all 1s;
+	/*transition: all 1s;*/
+  display: none;
 }
 /*Pseudo classe de invalido*/
 input:invalid{
@@ -321,7 +322,7 @@ input#control-nav {
     position: relative;
   }
 
-   .control-nav:hover p{
+  .control-nav:hover p{
    		background-color: #00FFFF;
     }
   .control-nav-close {

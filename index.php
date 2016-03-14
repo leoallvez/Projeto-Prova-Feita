@@ -7,6 +7,8 @@
 		<link rel="shortcut icon" href="_img/logo.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="_css/style.css" media="screen and (color)">
 		<link rel="stylesheet" href="_css/mobile.css" media="(max-width: 720px)">
+		<script type="text/javascript" src="_javascript/jquery-2.2.1.min.js"></script>
+        <script type='text/javascript' src='_javascript/jquery.js'></script>
 		<?php include "_php/functions.php"; ?>
 	</head>
 	<body>
