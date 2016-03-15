@@ -36,7 +36,7 @@
 				<th colspan='4' id='d'>Dúvidas e sugestões:</th>
 				<tr>
 			    	<td>
-			    		<p class='e'>suporte@provafeita.16mb.com</p>
+			    		<p class='e'>suporte@provafeita.com.br</p>
 			    	</td>
 				</tr>
 			</table>
