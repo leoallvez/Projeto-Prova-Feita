@@ -9,7 +9,7 @@ body{
 	background-image: none;
 }
 
-div{
+.main{
 	background: #008B8B;
 	margin: 15% auto 1%;
 	width: 100%;
@@ -75,7 +75,6 @@ input[type="radio"]{
 	width: 10%;
 	display: block-inline;
 	margin-top: 1%;
-
 }
 
 .escolha label{
@@ -89,6 +88,13 @@ p#avi{
 
 .foot{
 	display: none;
+}
+
+.fb-comments{
+	width: auto;
+	display: block;
+	/*display: inline-block;*/
+	/*position: absolute;*/
 }
 
 

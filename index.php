@@ -13,7 +13,7 @@
     </head>
     <body>
         <?php include "_php/header.php";?>
-        <div id="principal">
+        <div class="main">
             <form method="get" action="resultados.php">
                 <fieldset>
                     <legend><strong>M1</strong></legend>

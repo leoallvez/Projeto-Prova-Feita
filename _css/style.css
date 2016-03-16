@@ -23,11 +23,21 @@ body{
 }
 
 h2{
-	text-indent: 10px;
-	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-	font-size: 1.5em;
-	transition: all 1s;
-	float: left;
+  text-indent: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  font-size: 1.5em;
+  transition: all 1s;
+  float: left;
+  opacity: 1;
+}
+
+h3{
+  padding: 1%;
+  text-indent: 40px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  font-size: 1.2em;
+  transition: all 1s;
+  float: left;
   opacity: 1;
 }
 
@@ -35,7 +45,7 @@ span#bet{
 	font-size: 0.7em;
 }
 
-div{
+.main{
 	margin: 6% auto 1%;
 	width: 30%;
 	min-width: 320px;
@@ -377,6 +387,26 @@ p.m a:hover, p.foot a:hover{
   body{
     background-image: url("../_img/library2.jpg");
   }
+}
+.fb-space{
+  z-index: 0;
+  background-image: linear-gradient(to bottom,#008B8B,rgb(0,128,128)); 
+  display: inherit;
+}
+.fb-comments{
+  margin: 2% auto auto auto;
+  width: 100%;
+
+  
+  z-index: 0;
+  transition: all 1.2s;
+}
+.fb-comments input{
+  display: none;
+}
+
+#fb-root{
+  display: none;
 }
 
 

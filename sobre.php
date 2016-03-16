@@ -9,8 +9,19 @@
 		<link rel='stylesheet' href='_css/mobile.css' media='(max-width: 720px)'>
 	</head>
 	<body>
+		<!--Script plugin Facebook-->
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+  			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<?php include "_php/header.php";?>
-		<div id='principal'>
+		<div class="main">
 			<table> 
 				<th colspan='4' id='d'>Sobre:</th>
 				<tr>
@@ -38,12 +49,17 @@
 				<th colspan='4' id='d'>Dúvidas e sugestões:</th>
 				<tr>
 			    	<td>
-			    		<p class='e'>suporte@provafeita.com.br</p>
+			    		<p class='e'>suporte@provafeita.com.br ou deixe o seu comentário abaixo.</p>
 			    	</td>
 				</tr>
+				
 			</table>
 			</br>
 			<a class='bot' id='vot'href='index.php'>Início</a>
+		</div>
+		<div class="fb-space">
+			<h3>Comentários</h3>
+			<div class="fb-comments main"data-href="https://provafeita.com.br" data-numposts="5"></div>
 		</div>
 		<?php include "_php/footer.php"; ?>
 	</body>

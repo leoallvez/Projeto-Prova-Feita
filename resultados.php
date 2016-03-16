@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<?php include "_php/header.php";?>
-		<div id='principal'>
+		<div class="main">
 			<?php
 				include '_php/functions.php';
 				include '_php/_class/calculoRegular.php';
