@@ -1,9 +1,10 @@
 <?php
 include "_php/_class/calculo.php";
+#Classe de calculo do curso Regular.
 class CalculoRegular extends Calculo{
 	#nota integrada.
 	protected $ni; 
-
+	#Metodo construtor da classe.
 	public function __construct($m1, $nd, $ni){
 		# contrutor classe pai.
 		parent::__construct($m1, $nd);
@@ -11,7 +12,7 @@ class CalculoRegular extends Calculo{
 		$this->calcularM2();
 		$this->calcularMedia();
 	}
-
+	#Getter e setter da classe.
 	public function getM1(){
 		return $this->m1;
 	}
@@ -24,13 +25,17 @@ class CalculoRegular extends Calculo{
 		return $this->ni;
 	}
 
+	public function getM2(){
+		return $this->m2;
+	}
+
+	public function getMe(){
+
+		return $this->me;
+	}
 	#Esse metodo calcula a nota da m2.
 	protected function calcularM2(){
 		$this->m2 = number_format((($this->nd * 0.70 )+( $this->ni * 0.30)),1);
-	}
-
-	public function getM2(){
-		return $this->m2;
 	}
 	#Esse metodo simula uma sobrecarga de metodos de acordo com a quant. parametro. 
 	protected function calcularMedia(){
@@ -45,11 +50,6 @@ class CalculoRegular extends Calculo{
 		}
 		return 0;
 	}
-
-	public function getMe(){
-
-		return $this->me;
-	}
 	/*Esse metodo retorna a nota min. que o aluno tem 
 	que tirar na diciplina e integrada para passar direto.*/
 	public function calcularMin(){
@@ -57,7 +57,7 @@ class CalculoRegular extends Calculo{
 		while(true){
 			$n = $this->calcularMedia($m2);
 			if($n == 5.0){
-				return number_format($m2,2);
+				return number_format($m2,1);
 			}
 			$m2 = $m2 + 0.01;
 		}
@@ -106,7 +106,6 @@ class CalculoRegular extends Calculo{
 		}
 		return $ni;
 	}
-
 	/*Esse metodo retorna a nota min. que o aluno tem 
 	que tirar na prova diciplinar para ficar de exame.*/
 	public function calcularMinDisciplinaExame(){
@@ -121,7 +120,6 @@ class CalculoRegular extends Calculo{
 		}
 		return $nd;
 	}
-
 	/*Esse metodo mostra a situação final do aluno*/
 	public function mostrarStatus(){
 		if($this->me >= 5){

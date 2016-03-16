@@ -1,11 +1,12 @@
 <?php
-
+#Classe abstrata de calculo
 abstract class Calculo{
+	
 	protected $m1; #nota m1.
 	protected $nd; #nota discliplina.
 	protected $m2; #nota m2.
 	protected $me; #média final.
-
+	#Metodo construtor da classe.
 	public function __construct($m1, $nd){
 		$this->m1 = $m1;
 		$this->nd = $nd;

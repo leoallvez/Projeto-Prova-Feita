@@ -1,33 +1,14 @@
 <?php 
-	function recebeValor($v){
+	//Essa função recebe e valida o valor das notas passadas pelas url.
+	function recebeNota($v){
 		return number_format((isset($_GET[$v])?$_GET[$v]:0),1);
 	}
-
+	//Essa função recebe e valida o valor dos radios passadas pelas url.
 	function recebeRadio($v){
 		return isset($_GET[$v])?$_GET[$v]:"n";
 	}
-	
-	function calculaM2($nd, $ni){
-		return number_format((($nd * 0.70 )+( $ni * 0.30)),1);
-	}
-
-
-	function calculaMedia($m1, $m2){
-		return number_format((($m1 + ($m2 * 2)) / 3),1);
-	}
-
-
-	function retornaStatus($med){
-		if($med >= 5){
-			$s = "<span id='g'>Aprovado</span>";
-		}elseif(($med >= 3) && ($med <= 4.9)){
-			$s = "<span id='y'>De exame</span>";
-		}else{
-			$s = "<span id='r'>Reprovado</span>";
-		}
-		return $s;
-	}
-
+	/*Essa função gera dinamicamente das tags <option> 
+	para auto preechimento das notas*/
 	function notas(){
 		echo "<datalist id='lista'>";
 		$n = 0.0;
@@ -36,16 +17,5 @@
 			$n += 0.1;
 		}
 		echo "</datalist>";
-	}
-
-	function faltaM1($m1){
-		$m2 = 0;
-		while(true){
-			$n = calculaMedia($m1, $m2);
-			if($n == 5){
-				return $m2;
-			}
-			$m2 = $m2 + 0.1;
-		}
 	}
 ?>
