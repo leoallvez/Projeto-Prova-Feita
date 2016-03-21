@@ -22,6 +22,12 @@ body{
   background-color: #008B8B;
 }
 
+.logo{
+  border: 1px solid #000;
+  margin-top: -7%;
+  margin-left: 6%;
+}
+
 h2{
   text-indent: 10px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
@@ -46,7 +52,7 @@ h3{
 }
 
 .main{
-	margin: 6% auto 1%;
+	margin: 7% auto 1%;
 	width: 30%;
 	min-width: 320px;
 	height: 30%;

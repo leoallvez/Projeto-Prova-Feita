@@ -1,7 +1,9 @@
 <!--Essa é a implementação do cabeçalho do site-->
 <header>
     <h1 class="float-l">
-        <h2>Prova Feita<sup><span id="beta"> beta</span></sup></h2>
+        <a href="index.php">
+            <img class="logo" src="_img/logo4.png">
+        </a>
     </h1>   
     <input type="checkbox" id="control-nav" />
     <label for="control-nav" class="control-nav"><p></p></label>
