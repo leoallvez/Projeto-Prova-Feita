@@ -23,39 +23,40 @@
 		<?php include "_php/header.php";?>
 		<div class="main">
 			<table> 
-				<th colspan='4' id='d'>Sobre:</th>
+				<th colspan='4' class='green-light'>O que é:</th>
 				<tr>
 			    	<td>
-			    		<p class="m">
+			    		<p class="message">
 			    			Prova Feita é uma aplicação web de 
-			    			<a href="https://github.com/leoallvez/Projeto-Prova-Feita" target="_blank">código aberto</a> 
+			    			<a href="https://github.com/leoallvez/Projeto-Prova-Feita" target="_blank" 
+			    			title="link para o código no github">código aberto</a> 
 			    			desenvolvida por Leonardo Pereira Alves, que visa auxiliar os alunos da 
-			    			<a href="http://www.umc.br/" target="_blank">Universidade de Mogi das Cruzes (UMC)</a> 
-			    			no cálculo e administração de suas notas. Essa aplicação não possui nenhum vínculo com a
-			    			UMC.
+			    			<a href="http://www.umc.br/" target="_blank" title="link para o site da universidade">
+			    			Universidade de Mogi das Cruzes (UMC)</a> no cálculo e administração de suas notas. 
+			    			Essa aplicação não possui nenhum vínculo com a UMC.
 			    		</p>
 			    	</td>
 				</tr>
-				<th colspan='4' id='d'>Como funciona:</th>
+				<th colspan='4' class='green-light'>Como funciona:</th>
 				<tr>
 			    	<td>
-			    		<p class="m">
+			    		<p class="message">
 			    			Conforme o aluno tem acesso das notas das suas avaliações feitas, 
 			    			ele poderá calcular quais serão as notas mínimas terá que tirar nas 
 			    			próximas avaliações para passar direto. 
 			    		</p>
 			    	</td>
 				</tr>
-				<th colspan='4' id='d'>Dúvidas e sugestões:</th>
+				<th colspan='4' class='green-light'>Dúvidas e sugestões:</th>
 				<tr>
 			    	<td>
-			    		<p class='e'>suporte@provafeita.com.br ou deixe o seu comentário abaixo.</p>
+			    		<p class='message'>suporte@provafeita.com.br ou deixe o seu comentário abaixo.</p>
 			    	</td>
 				</tr>
 				
 			</table>
-			</br>
-			<a class='bot' id='vot'href='index.php'>Início</a>
+		
+			<input type="submit" class="input-button" value="Home" onclick="window.location='index.php';" /> 
 		</div>
 		<div class="fb-space">
 			<h3>Comentários</h3>

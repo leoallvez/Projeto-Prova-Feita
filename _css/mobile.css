@@ -29,32 +29,33 @@ fieldset{
 	border-radius: 3px;
 }
 /*input number m1*/
-input.a{
+.input-m1{
 	width: 18%;
 }
 /*input number dicliplina e integrada*/
-input.b{
+.input-m2{
 	margin-top: 8%;
 	width: 22%;
 }
 /*style of submit and links*/
-input.bot{
+.input-button{
 	font-size: 90%;
 	text-indent: 0px;
 	padding: 1%;
 	margin: 100%;
-	margin: 3% 6%;
+	margin: 3% 3%;
 	width: 20%;
 	min-height: 30px;
 	background-color: #4169E1;
 	border-radius: 3px;
-}
-/*the last input of the class .bot*/
-input.bot:last-child{
-	margin: 3% 1%;
+	margin-left: 7%;
 }
 
-#vot{
+input[type=reset]{
+	margin-left: 1%;
+}
+
+#back{
 	margin: 4% 0% 8% 8%;
 }
 
@@ -64,7 +65,7 @@ table{
 	padding: 6%;
 }
 
-fieldset.escolha{
+.choice-field{
 	float: right;
 	min-width: 50%;
 	margin: 3% 1%;
@@ -77,11 +78,11 @@ input[type="radio"]{
 	margin-top: 1%;
 }
 
-.escolha label{
+.field-border label{
 	font-size: 82%;
 }
 
-p#avi{
+#warning{
 	font-size: 75%;
 	display: block;
 }

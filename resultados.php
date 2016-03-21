@@ -51,10 +51,10 @@
 			?>
 			<table>
 				<!-- tabela dimanica de resultados --> 
-				<th colspan='4' id='d'>Resultados:</th>
+				<th colspan='4' class='green-light'>Resultados:</th>
 				<tr>
-			    	<td class='e'>Nota M1: </td> 
-			    	<td class='d'><?= $n->getM1(); ?></td>
+			    	<td class='green-normal'>Nota M1: </td> 
+			    	<td class='green-light'><?= $n->getM1(); ?></td>
 				</tr>
 				<!-- Se o aluno fez a avaliação de disciplina e a integrada não --> 
 				<?php if($rd == "s" && $ri == "n"): ?>
@@ -62,21 +62,21 @@
 					<?php if($n->calcularMinIntegrada() >10): ?>
 
 						<tr>
-							<td class='e'><?= $texto[0]; ?></td>
-				    		<td class='d'><?= $n->getNd(); ?></td>
+							<td class='green-normal'><?= $texto[0]; ?></td>
+				    		<td class='green-light'><?= $n->getNd(); ?></td>
 						</tr>
 						<tr>
-							<td class='e'><?= $texto[1]; ?></td>
-							<td class='d'><?= $n->getM2(); ?></td>
+							<td class='green-normal'><?= $texto[1]; ?></td>
+							<td class='green-light'><?= $n->getM2(); ?></td>
 						</tr>
 						<tr>
-							<td class='e'><?= $texto[2]; ?></td>
-							<td class='d'><?= $n->getMe(); ?></td>
+							<td class='green-normal'><?= $texto[2]; ?></td>
+							<td class='green-light'><?= $n->getMe(); ?></td>
 						</tr>
 						<!--Se a nota mínima da Integrada para ficar de exame seja > 10 mostrar essa mensagem.-->
 						<?php if($n->calcularMinIntegradaExame() >10): ?>
 							<tr>
-								<td class='m'colspan="2" >
+								<td class='message'colspan="2" >
 									Você tirou notas muito baixas na M1 e na avaliação de Disciplina,  
 									infelizmente com essas notas não é possível nem mesmo ficar de exame, 
 									por mais que você tire 10 na Integrada.
@@ -85,28 +85,28 @@
 						<!--Senão mostrar a minima da Integrada para ficar exame.-->
 						<?php else: ?>
 							<tr>
-								<td class='m'><?= $texto[4]; ?></td>
-								<td class='d'><?= $n->calcularMinIntegradaExame(); ?></td>
+								<td class='message'><?= $texto[4]; ?></td>
+								<td class='green-light'><?= $n->calcularMinIntegradaExame(); ?></td>
 							</tr>
 						<?php endif; ?>
 					<!--Senão mostrar a nota mínima para passar direto-->
 					<?php else: ?>
 						<tr>	
-							<td class='e'><?= $texto[0]; ?></td>
-				    		<td class='d'><?= $n->getNd(); ?></td>
+							<td class='green-normal'><?= $texto[0]; ?></td>
+				    		<td class='green-light'><?= $n->getNd(); ?></td>
 						</tr>
 						<tr>
-							<td class='e'><?= $texto[1]; ?></td>
-							<td class='d'><?= $n->getM2(); ?></td>
+							<td class='green-normal'><?= $texto[1]; ?></td>
+							<td class='green-light'><?= $n->getM2(); ?></td>
 						</tr>
 						<tr>
-							<td class='e'><?= $texto[2]; ?></td>
-							<td class='d'><?= $n->getMe(); ?></td>
+							<td class='green-normal'><?= $texto[2]; ?></td>
+							<td class='green-light'><?= $n->getMe(); ?></td>
 						</tr>
 
 						<tr>
-							<td class='e'><?= $texto[3]; ?></td>
-							<td class='d'><?= $n->calcularMinIntegrada(); ?></td>
+							<td class='green-normal'><?= $texto[3]; ?></td>
+							<td class='green-light'><?= $n->calcularMinIntegrada(); ?></td>
 						</tr>
 					<?php endif; ?>
 				<!-- Se o aluno não fez a avaliação de disciplina e fez a integrada--> 
@@ -114,76 +114,75 @@
 					<!--Se a nota minima para passar direto seja > 10 calcular mínima para exame.-->
 					<?php if($n->calcularMinDisciplina() > 10): ?>
 						<tr>
-							<td class='e'><?= $texto[0]; ?></td>
-				    		<td class='d'><?= $n->getNi(); ?></td>
+							<td class='green-normal'><?= $texto[0]; ?></td>
+				    		<td class='green-light'><?= $n->getNi(); ?></td>
 						</tr>
 						<tr>
-							<td class='e'><?= $texto[1]; ?></td>
-							<td class='d'><?= $n->getM2(); ?></td>
+							<td class='green-normal'><?= $texto[1]; ?></td>
+							<td class='green-light'><?= $n->getM2(); ?></td>
 						</tr>
 						<tr>
-							<td class='e'><?= $texto[2]; ?></td>
-							<td class='d'><?= $n->getMe(); ?></td>
+							<td class='green-normal'><?= $texto[2]; ?></td>
+							<td class='green-light'><?= $n->getMe(); ?></td>
 						</tr>
 						<tr>
-							<td class='m'><?= $texto[4]; ?></td>
-							<td class='d'><?= $n->calcularMinDisciplinaExame(); ?></td>
+							<td class='message'><?= $texto[4]; ?></td>
+							<td class='green-light'><?= $n->calcularMinDisciplinaExame(); ?></td>
 						</tr>
 					<!--Senão mostrar a minima da avaliação de disciplina para ficar exame.-->
 					<?php else: ?>
 						<tr>
-							<td class='e'><?= $texto[0]; ?></td>
-				    		<td class='d'><?= $n->getNi(); ?></td>
+							<td class='green-normal'><?= $texto[0]; ?></td>
+				    		<td class='green-light'><?= $n->getNi(); ?></td>
 						</tr>
 						<tr>
-							<td class='e'><?= $texto[1]; ?></td>
-							<td class='d'><?= $n->getM2(); ?></td>
+							<td class='green-normal'><?= $texto[1]; ?></td>
+							<td class='green-light'><?= $n->getM2(); ?></td>
 						</tr>
 						<tr>
-							<td class='e'><?= $texto[2]; ?></td>
-							<td class='d'><?= $n->getMe(); ?></td>
+							<td class='green-normal'><?= $texto[2]; ?></td>
+							<td class='green-light'><?= $n->getMe(); ?></td>
 						</tr>
 						<tr>
-							<td class='e'><?= $texto[3]; ?></td>
-							<td class='d'><?= $n->calcularMinDisciplina(); ?></td>
+							<td class='green-normal'><?= $texto[3]; ?></td>
+							<td class='green-light'><?= $n->calcularMinDisciplina(); ?></td>
 						</tr>
 					<?php endif; ?>
 				<!-- Se o aluno não fez a avaliação de disciplina e nem a integrada--> 
 				<?php elseif($rd == "n" && $ri == "n"): ?>
 					<tr>
-						<td class='e'><?= $texto[0]; ?></td>
-						<td class='d'><?= $n->getMe(); ?></td>
+						<td class='green-normal'><?= $texto[0]; ?></td>
+						<td class='green-light'><?= $n->getMe(); ?></td>
 					</tr>
 					<tr>
-						<td class='e'><?= $texto[1]; ?></td>
-					    <td class='d'><?= $n->calcularMin(); ?></td>
+						<td class='green-normal'><?= $texto[1]; ?></td>
+					    <td class='green-light'><?= $n->calcularMin(); ?></td>
 					</tr>
 				<!-- Se o aluno fez a avaliação de disciplina e a integrada também--> 
 				<?php else: ?>
 					<tr>	
-						<td class='e'><?= $texto[0]; ?></td>
-				    	<td class='d'><?= $n->getNd(); ?></td>
+						<td class='green-normal'><?= $texto[0]; ?></td>
+				    	<td class='green-light'><?= $n->getNd(); ?></td>
 					</tr>
 					<tr>	
-						<td class='e'><?= $texto[1]; ?></td>
-				    	<td class='d'><?= $n->getNi(); ?></td>
+						<td class='green-normal'><?= $texto[1]; ?></td>
+				    	<td class='green-light'><?= $n->getNi(); ?></td>
 					</tr>
 					<tr>
-						<td class='e'>Nota M2</td>
-						<td class='d'><?= $n->getM2(); ?></td>
+						<td class='green-normal'>Nota M2</td>
+						<td class='green-light'><?= $n->getM2(); ?></td>
 					</tr>
 					<tr>
-						<td class='e'>Média Final:</td>
-						<td class='d'><?= $n->getMe(); ?></td>
+						<td class='green-normal'>Média Final:</td>
+						<td class='green-light'><?= $n->getMe(); ?></td>
 					</tr>
 					<tr>
-						<td class='e'>Situação do Aluno:</td>
-						<td class='d'><?= $n->mostrarStatus(); ?></td>
+						<td class='green-normal'>Situação do Aluno:</td>
+						<td class='green-light'><?= $n->mostrarStatus(); ?></td>
 					</tr>
 				<?php endif; ?>
 			</table>
-			</br>
-			<a class='bot' id='vot'href='index.php'>Voltar</a>
+			<input type="submit" class="input-button" value="Home" onclick="window.location='index.php';" /> 
 		</div>
 		<?php include "_php/footer.php"; ?>
 	</body>

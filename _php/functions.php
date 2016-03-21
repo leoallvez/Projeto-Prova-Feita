@@ -10,7 +10,7 @@
 	/*Essa função gera dinamicamente das tags <option> 
 	para auto preechimento das notas*/
 	function notas(){
-		echo "<datalist id='lista'>";
+		echo "<datalist id='list'>";
 		$n = 0.0;
 		for($i = 0; $i <= 100;$i++){
 			echo "<option value='".$n."'></option>";

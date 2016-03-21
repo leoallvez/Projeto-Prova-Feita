@@ -20,7 +20,7 @@ function zera2(id){
 
 function aviso(spanId, valor){
 	if(valor == true){
-		document.getElementById(spanId).innerHTML = "<p id='avi'>*nota inteira sem porcentagem</p>";
+		document.getElementById(spanId).innerHTML = "<p id='warning'>*nota inteira sem porcentagem</p>";
 	}else{
 		document.getElementById(spanId).innerHTML = "";
 	}

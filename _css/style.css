@@ -41,7 +41,7 @@ h3{
   opacity: 1;
 }
 
-span#bet{
+#beta{
 	font-size: 0.7em;
 }
 
@@ -59,7 +59,7 @@ span#bet{
 	transition: all 1.2s;
 }
 
-p, a{
+p {
 	margin-left: 2%;
 }
 
@@ -72,7 +72,7 @@ fieldset{
 	z-index: 0;
 }
 /*input number m1*/
-input.a{
+.input-one{
 	color: #000;
 	border: 1px solid #00FFFF;
 	font-size: 95%;
@@ -87,7 +87,7 @@ input.a{
 }
 
 /*input number dicliplina e integrada*/
-input.b{
+.input-two{
 	color: #000;
 	border: 1px solid #00FFFF;
 	font-size: 95%;
@@ -98,14 +98,14 @@ input.b{
 	width: 23%;
 	height: 15%;
 	border-radius: 3px;
-	/*transition: all 1s;*/
   display: none;
+
 }
-/*Pseudo classe de invalido*/
+/*The pseudos class*/
 input:invalid{
 	border: 2px solid #FF6347;
 } 
-/*Pseudo classe de valido*/
+
 input:valid{
 	border-color: #FFF;
 } 
@@ -114,10 +114,11 @@ input:focus{
 	border: 2px solid #00FFFF;
 	background: #008B8B;
 	color: #FFF;
+  transition: all 1s;
 }
 
-/*Estilos de submit e links*/
-input.bot, a.bot{
+/*The style of input-submit, input-buttons and links*/
+.input-button{
 	font-size: 90%;
 	border: 1px solid #00FFFF;
 	text-indent: 0px;
@@ -132,16 +133,16 @@ input.bot, a.bot{
   transition: all 0.3s;
 }
 
-.bot:hover{
+.input-button:hover{
 	color: #00FFFF;
 	background-image: linear-gradient(to bottom,#008B8B,#008B8B);
 }
 
-.bot:active{
+.input-button:active{
 	font-size: 1em;
 }
-
-#vot{
+/*Link back*/
+#back{
 	margin-top: 3%;
 	margin: 2%;
 }
@@ -154,48 +155,51 @@ table{
 }
 
 td, th{
-
 	border: 1px solid #00FFFF;
 	padding: 1%;
 	border-radius: 3px;
 	min-width: 12%;
 }
-/*lacuna direita da tabela*/
-.d{
+/*right column of the table*/
+.green-light{
 	text-align: center;
 	color: #FFF;
 	background-image: linear-gradient(to bottom,#008B8B,#20B2AA);
 }
-/*lacuna esquerda da tabela*/
-.e{
+/*left column of the table*/
+.green-normal{
   text-align: left;
 	color: #00FFFF;
 }
 
-.m{
+.message{
   text-align: justify;
   color: #00FFFF;
   margin-left: 0%;
   padding: 2%;
 }
 
-
-fieldset.escolha{
+.choice-field{
 	float: right;
 	min-width: 52%;
 	min-height: 10%;
 }
 
-fieldset.diciplina{
+.field-border{
 	margin: 2%;
 }
 
-fieldset.diciplina label{
+.field-border-result{
+  margin: 2%;
+  padding: 6%;
+}
+
+.field-border label{
 	margin-left: 7%;
 }
 
-/*paragrafo dentro de um função javascript*/
-p#avi{
+/*paragraph within a javascript function*/
+#warning{
 	margin-left: 0%;
 	margin-top: 0%;
 	font-size: 80%;
@@ -240,7 +244,6 @@ header li a {
   color: #FFF;
   line-height: 30px;
   text-decoration: none;
-
   transition: all 1s;
 }
 
@@ -258,7 +261,7 @@ input#control-nav {
   left: -9999px;
   opacity: 0;
 }
-
+/*Header*/
 @media screen and (max-width: 720px) {
   header nav {
     position: fixed;
@@ -336,6 +339,7 @@ input#control-nav {
   .control-nav:hover p{
    	background-color: #00FFFF;
   }
+  
   .control-nav-close {
     position: fixed; /* label layer */
     right: 0;
@@ -368,14 +372,14 @@ input#control-nav {
   transition: all 1s;
 }
 
-p.m a, p.foot a{
+p.message a, p.foot a{
   text-decoration: none;
   margin-left: 0;
   margin 0;
   transition: all 1s;
 }
 
-p.m a:hover, p.foot a:hover{
+p.message a:hover, p.foot a:hover{
   text-indent: 0;
   color: #00FFFF;  
 }
@@ -388,17 +392,16 @@ p.m a:hover, p.foot a:hover{
     background-image: url("../_img/library2.jpg");
   }
 }
+/*Facebook*/
 .fb-space{
   z-index: 0;
   background-image: linear-gradient(to bottom,#008B8B,rgb(0,128,128)); 
   display: inherit;
 }
+
 .fb-comments{
   margin: 2% auto auto auto;
   width: 100%;
-
-  
-  z-index: 0;
   transition: all 1.2s;
 }
 .fb-comments input{
