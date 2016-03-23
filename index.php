@@ -19,7 +19,7 @@
                     <legend><strong>M1</strong></legend>
                     <label for="nm1">Nota M1:</label></br>
                     <input type="number" name="m1" value="" id="nm1" list="list" step="0.1" 
-                    min="0" max="10" onFocus="limpa('nm1')" onBlur="zera('nm1')" placeholder="0.0" class="input-one" ></br>
+                    min="0" max="10" onFocus="limpa('nm1')" onBlur="zera('nm1')" placeholder="0.0" class="input-one"></br>
                     <?php notas(); ?>
                 </fieldset>
                 <fieldset>
