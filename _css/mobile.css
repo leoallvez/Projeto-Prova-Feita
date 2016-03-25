@@ -87,6 +87,33 @@ input[type="radio"]{
 	display: block;
 }
 
+.main-about {
+  background: #008B8B;
+  margin: 15% auto 1%;
+  width: 98%;
+  box-shadow: none;
+}
+
+.main-about h2{
+	color: #FFF;
+	padding: 2%;
+	border-bottom: 1px solid #FFF;
+}
+
+.main-about p {
+	color: #F0F8FF;
+	padding: 2%;
+}
+
+.main-about a {
+	color: #00FFFF;
+	font-weight: normal;
+}
+
+.main-about strong{
+	color: #F0F8FF;	
+}
+
 .foot{
 	display: none;
 }
@@ -94,6 +121,7 @@ input[type="radio"]{
 .fb-comments{
 	width: auto;
 	display: block;
+	z-index: 1;
 	/*display: inline-block;*/
 	/*position: absolute;*/
 }

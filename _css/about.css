@@ -1,0 +1,80 @@
+.main-about {
+  margin: 7% auto 1%;
+  width: 80%;
+  min-width: 320px;
+  height: 30%;
+  min-height: 390px;
+  padding: 2%;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  display: block;
+  background-color: #FFF;
+  /*background-image: linear-gradient(to bottom,#008B8B,rgb(0,128,128))/*/;
+  border-radius: 3px;
+  transition: all 1.2s;
+}
+.main-about h2 {
+  text-indent: 0;
+  float: none;
+  color: #00FFFF;
+  padding: 1%;
+  margin: 1%;
+  text-shadow: none;
+  border-bottom: 1px solid #20B2AA;
+  font-family: Arial;
+  transition: all 1.2s;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.main-about p {
+  color: #696969;
+  margin-left: 0;
+  padding: 1%;
+  margin: 1%;
+  margin-left: 0;
+  font-size: 1.1em;
+  text-align: justify;
+  font-family: Arial;
+  transition: all 1.2s;
+}
+
+.main-about a {
+  color: #20B2AA;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: all 1s;
+}
+
+.main-about a:hover{
+  color: #00FFFF;
+  text-shadow: 1px 1px 3px #000;
+  transition: all 1.2s;
+}
+
+.main-about strong{
+  color: #696969;
+}
+
+/*Facebook*/
+.fb-space{
+  z-index: 30;
+  background-image: linear-gradient(to bottom,#008B8B,rgb(0,128,128));
+  margin: 2% auto auto auto;
+}
+
+.fb-space h3 {
+  margin-top: 2%;
+  text-indent: 4%;
+  text-shadow: 1px 1px 3px #000;
+}
+.fb-comments{
+  margin: 2% auto auto auto;
+  width: 100%;
+  transition: all 1.2s;
+}
+.fb-comments input{
+  display: none;
+}
+
+#fb-root{
+  display: none;
+}

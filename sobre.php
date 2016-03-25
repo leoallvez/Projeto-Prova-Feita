@@ -6,7 +6,9 @@
 		<meta name='viewport' content='width=device-width,initial-scale=1'>
 		<link rel="shortcut icon" href="_img/logo.ico" type="image/x-icon"/>
 		<link rel='stylesheet' href='_css/style.css' media='screen and (color)'>
+		<link rel='stylesheet' href='_css/about.css' media='screen and (color)'>
 		<link rel='stylesheet' href='_css/mobile.css' media='(max-width: 720px)'>
+
 	</head>
 	<body>
 		<!--Script plugin Facebook-->
@@ -21,46 +23,29 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		<?php include "_php/header.php";?>
-		<div class="main">
-			<table> 
-				<th colspan='4' class='green-light'>O que é:</th>
-				<tr>
-			    	<td>
-			    		<p class="message">
-			    			Prova Feita é uma aplicação web de 
-			    			<a href="https://github.com/leoallvez/Projeto-Prova-Feita" target="_blank" 
-			    			title="link para o código no github">código aberto</a> 
-			    			desenvolvida por Leonardo Pereira Alves, que visa auxiliar os alunos da 
-			    			<a href="http://www.umc.br/" target="_blank" title="link para o site da universidade">
-			    			Universidade de Mogi das Cruzes (UMC)</a> no cálculo e administração de suas notas. 
-			    			Essa aplicação não possui nenhum vínculo com a UMC.
-			    		</p>
-			    	</td>
-				</tr>
-				<th colspan='4' class='green-light'>Como funciona:</th>
-				<tr>
-			    	<td>
-			    		<p class="message">
-			    			Conforme o aluno tem acesso das notas das suas avaliações feitas, 
-			    			ele poderá calcular quais serão as notas mínimas terá que tirar nas 
-			    			próximas avaliações para passar direto. 
-			    		</p>
-			    	</td>
-				</tr>
-				<th colspan='4' class='green-light'>Dúvidas e sugestões:</th>
-				<tr>
-			    	<td>
-			    		<p class='message'>suporte@provafeita.com.br ou deixe o seu comentário abaixo.</p>
-			    	</td>
-				</tr>
-				
-			</table>
-		
-			<input type="submit" class="input-button" value="Home" onclick="window.location='index.php';" /> 
+		<div class="main-about">
+			<h2>O que é:</h2>
+			<p>
+				Prova Feita é uma aplicação web de 
+				<a href="https://github.com/leoallvez/Projeto-Prova-Feita" target="_blank" 
+				title="link para o código no github">código aberto</a> 
+				desenvolvida por Leonardo Pereira Alves, que visa auxiliar os alunos da 
+				<a href="http://www.umc.br/" target="_blank" title="link para o site da universidade">
+				Universidade de Mogi das Cruzes (UMC)</a> no cálculo e administração de suas notas. 
+			   	Essa aplicação não possui nenhum vínculo com a UMC.
+			</p>
+			<h2>Como funciona:</h2>
+			<p>
+			   	Conforme o aluno tem acesso das notas das suas avaliações feitas, 
+			    ele poderá calcular quais serão as notas mínimas terá que tirar nas 
+			    próximas avaliações para passar direto. 
+			</p>
+			<h2>Dúvidas e sugestões:</h2>
+			<p><strong>suporte@provafeita.com.br</strong> ou deixe o seu comentário abaixo.</p>   
 		</div>
 		<div class="fb-space">
 			<h3>Comentários</h3>
-			<div class="fb-comments main"data-href="https://provafeita.com.br" data-numposts="5"></div>
+			<div style="z-index: 1;" class="fb-comments main"data-href="https://provafeita.com.br" data-numposts="5"></div>
 		</div>
 		<?php include "_php/footer.php"; ?>
 	</body>
