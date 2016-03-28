@@ -214,6 +214,7 @@ li {
   display: block;
   width: auto;
   position: relative; 
+  z-index: 3;
 }
 
 .float-l { float: left; }
@@ -226,7 +227,7 @@ header {
   right: 0;
   left: 0;
   background: #008B8B;
-  opacity: 0.9;
+  opacity: 1;
   box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
   transition: all 1s;
 }
@@ -273,7 +274,7 @@ input#control-nav {
     border-left: 1px solid #CCC;
     background: #FFF;
     overflow-x: auto;
-    z-index: 2; /*Coloca em segundo plano*/
+    z-index: 3; /*Coloca em segundo plano*/
     transition: all 500ms ease;
     transform: translate(100%, 0);
   }
@@ -319,7 +320,7 @@ input#control-nav {
     padding: 5px 0;
     border: solid #FFF;
     border-width: 3px 0;
-    z-index: 1;
+    z-index: 2;
   }
 
   .control-nav:hover{
@@ -376,7 +377,7 @@ input#control-nav {
 p.message a, p.foot a{
   text-decoration: none;
   margin-left: 0;
-  margin 0;
+  margin: 0;
   transition: all 1s;
 }
 
@@ -393,25 +394,7 @@ p.message a:hover, p.foot a:hover{
     background-image: url("../_img/library2.jpg");
   }
 }
-/*Facebook*/
-.fb-space{
-  z-index: 0;
-  background-image: linear-gradient(to bottom,#008B8B,rgb(0,128,128)); 
-  display: inherit;
-}
 
-.fb-comments{
-  margin: 2% auto auto auto;
-  width: 100%;
-  transition: all 1.2s;
-}
-.fb-comments input{
-  display: none;
-}
-
-#fb-root{
-  display: none;
-}
 
 
 
