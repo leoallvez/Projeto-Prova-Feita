@@ -97,6 +97,7 @@ input[type="radio"]{
 .main-about h2{
 	color: #FFF;
 	padding: 2%;
+<<<<<<< HEAD
 	border-bottom: 1px solid #00FFFF;
 }
 
@@ -109,11 +110,27 @@ input[type="radio"]{
 .main-about a {
 	color: #FFF;
 	text-shadow: 1px 1px 3px #000;
+=======
+	border-bottom: 1px solid #FFF;
+}
+
+.main-about p {
+	color: #F0F8FF;
+	padding: 2%;
+}
+
+.main-about a {
+	color: #00FFFF;
+>>>>>>> origin/master
 	font-weight: normal;
 }
 
 .main-about strong{
+<<<<<<< HEAD
 	color: #00FFFF;	
+=======
+	color: #F0F8FF;	
+>>>>>>> origin/master
 }
 
 .foot{

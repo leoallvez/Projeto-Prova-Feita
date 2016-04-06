@@ -8,7 +8,11 @@
   box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
   display: block;
   background-color: #FFF;
+<<<<<<< HEAD
   /*background-image: linear-gradient(to bottom,#008B8B,rgb(0,128,128));*/
+=======
+  /*background-image: linear-gradient(to bottom,#008B8B,rgb(0,128,128))/*/;
+>>>>>>> origin/master
   border-radius: 3px;
   transition: all 1.2s;
 }
@@ -19,10 +23,17 @@
   padding: 1%;
   margin: 1%;
   text-shadow: none;
+<<<<<<< HEAD
   border-bottom: 1px solid #696969;
   font-family: Arial;
   transition: all 1.2s;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+=======
+  border-bottom: 1px solid #20B2AA;
+  font-family: Arial;
+  transition: all 1.2s;
+  text-shadow: 1px 1px 3px #000;
+>>>>>>> origin/master
 }
 
 .main-about p {
@@ -35,7 +46,10 @@
   text-align: justify;
   font-family: Arial;
   transition: all 1.2s;
+<<<<<<< HEAD
   /**text-shadow: 1px 1px 3px rgba(0,0,0,0.4);*/
+=======
+>>>>>>> origin/master
 }
 
 .main-about a {
