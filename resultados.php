@@ -169,7 +169,7 @@
 				    	<td class='green-light'><?= $n->getNi(); ?></td>
 					</tr>
 					<tr>
-						<td class='green-normal'>Nota M2</td>
+						<td class='green-normal'>Nota M2:</td>
 						<td class='green-light'><?= $n->getM2(); ?></td>
 					</tr>
 					<tr>
@@ -187,3 +187,5 @@
 		<?php include "_php/footer.php"; ?>
 	</body>
 </html>
+<script>
+/** Anulando script de banner...
