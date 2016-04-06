@@ -192,7 +192,6 @@ td, th{
 .field-border-result{
   margin: 2%;
   padding: 6%;
-  min-height: 10%;
 }
 
 .field-border label{
@@ -412,7 +411,5 @@ p.message a:hover, p.foot a:hover{
 #fb-root{
   display: none;
 }
-
-
 
 
