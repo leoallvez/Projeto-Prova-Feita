@@ -35,7 +35,7 @@ h2{
 h3{
   padding: 1%;
   text-indent: 40px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
   font-size: 1.2em;
   transition: all 1s;
   float: left;
@@ -58,6 +58,7 @@ h3{
 	background-image: linear-gradient(to bottom,#008B8B,rgb(0,128,128));
 	border-radius: 3px;
 	transition: all 1.2s;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
 }
 
 p{
@@ -85,6 +86,7 @@ fieldset{
 	height: 15%;
 	border-radius: 3px;
 	transition: all 1s;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
 }
 
 /*input number dicliplina e integrada*/
@@ -100,6 +102,7 @@ fieldset{
 	height: 15%;
 	border-radius: 3px;
   display: none;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
 
 }
 /*The pseudos class*/
@@ -132,6 +135,7 @@ input:focus{
 	border-radius: 3px;
 	text-decoration: none;
   transition: all 0.3s;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
 }
 
 .input-button:hover{
@@ -153,6 +157,7 @@ table{
 	width: 100%;
 	height: auto;
 	border: 0px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
 }
 
 td, th{
