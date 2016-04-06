@@ -29,11 +29,7 @@
 				Prova Feita é uma aplicação web de 
 				<a href="https://github.com/leoallvez/Projeto-Prova-Feita" target="_blank" 
 				title="link para o código no github">código aberto</a> 
-<<<<<<< HEAD
 				desenvolvida por <strong>Leonardo Pereira Alves</strong>, que visa auxiliar os alunos da 
-=======
-				desenvolvida por Leonardo Pereira Alves, que visa auxiliar os alunos da 
->>>>>>> origin/master
 				<a href="http://www.umc.br/" target="_blank" title="link para o site da universidade">
 				Universidade de Mogi das Cruzes (UMC)</a> no cálculo e administração de suas notas. 
 			   	Essa aplicação não possui nenhum vínculo com a UMC.
@@ -45,11 +41,7 @@
 			    próximas avaliações para passar direto. 
 			</p>
 			<h2>Dúvidas e sugestões:</h2>
-<<<<<<< HEAD
 			<p><strong>contato@provafeita.com.br</strong> ou deixe o seu comentário abaixo.</p>   
-=======
-			<p><strong>suporte@provafeita.com.br</strong> ou deixe o seu comentário abaixo.</p>   
->>>>>>> origin/master
 		</div>
 		<div class="fb-space">
 			<h3>Comentários</h3>
