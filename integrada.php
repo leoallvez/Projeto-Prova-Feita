@@ -14,6 +14,7 @@
             .green{
                 color: #00FFFF;
             }
+
         </style>
     </head>
     <body>
@@ -21,7 +22,7 @@
         <div class="main">
             <form method="get" action="#">
                 <fieldset>
-                    <legend>Integrada</legend>
+                    <legend><strong>Integrada</strong></legend>
                     <fieldset class="field-border">
                         <legend>Quantidade de Questões</legend>
                         <input type="number" value="" id="number-of-issues"
@@ -45,5 +46,3 @@
         <?php include "_php/footer.php"; ?>
     </body>
 </html>
-<script>
-/** Anulando script de banner...
