@@ -17,6 +17,7 @@
         </style>
     </head>
     <body>
+        <?php include_once("_php/analyticstracking.php") ?>
         <?php include "_php/header.php";?>
         <div class="main">
             <form method="get" action="#">

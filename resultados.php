@@ -9,6 +9,7 @@
 		<link rel='stylesheet' href='_css/mobile.css' media='(max-width: 720px)'>
 	</head>
 	<body>
+		<?php include_once("_php/analyticstracking.php") ?>
 		<?php include "_php/header.php";?>
 		<div class="main">
 			<?php

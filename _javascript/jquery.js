@@ -20,7 +20,7 @@ $(document).ready(function(){
 		$('#nni').fadeIn('slow');
 	});
 	/*Botão de limpar*/
-	$('#a').click(function() {
+	$('#clear').click(function() {
 		/* Act on the event */
 		$('#nnd').hide('slow');
 		$('#nni').hide('slow');

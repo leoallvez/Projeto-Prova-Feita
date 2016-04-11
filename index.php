@@ -12,7 +12,9 @@
         <?php include "_php/functions.php"; ?>
     </head>
     <body>
+        <?php include_once("_php/analyticstracking.php") ?>
         <?php include "_php/header.php";?>
+
         <div class="main">
             <form method="get" action="resultados.php">
                 <fieldset>
@@ -56,7 +58,7 @@
                     </fieldset>
                 </fieldset>
                 <input type="submit" class="input-button" value="Calcular" onClick="zera()"/>
-                <input type="reset"  class="input-button" value="Limpar" />
+                <input type="reset"  class="input-button" value="Limpar" id="clear"/>
             </form>
         </div>
         <?php include "_php/footer.php"; ?>

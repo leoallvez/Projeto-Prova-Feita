@@ -8,9 +8,9 @@
 		<link rel='stylesheet' href='_css/style.css' media='screen and (color)'>
 		<link rel='stylesheet' href='_css/about.css' media='screen and (color)'>
 		<link rel='stylesheet' href='_css/mobile.css' media='(max-width: 720px)'>
-
 	</head>
 	<body>
+		<?php include_once("_php/analyticstracking.php") ?>
 		<!--Script plugin Facebook-->
 		<div id="fb-root"></div>
 		<script>

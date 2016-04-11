@@ -47,7 +47,7 @@ h3{
 }
 
 .main{
-	margin: 6% auto 1%;
+	margin: 8% auto 1%;
 	width: 30%;
 	min-width: 320px;
 	height: 30%;
@@ -73,37 +73,32 @@ fieldset{
 	background-image: linear-gradient(to bottom,#008B8B,#20B2AA);
 	z-index: 0;
 }
+
+input[type=number]{
+  color: #20B2AA;
+  padding: 2%; 
+  height: 15%;
+  font-weight :bold;
+  border-radius: 3px;
+  border: 2px solid #FFF;
+  font-size: 97%;
+  transition: all 1s;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.8);
+}
 /*input number m1*/
 .input-one{
-	color: #000;
-	border: 1px solid #00FFFF;
-	font-size: 95%;
 	margin-top: 1%;
 	margin-bottom: 5%;
-	padding: 2%; 
-	border: 2px solid #FFF;
 	width: 20%;
-	height: 15%;
-	border-radius: 3px;
-	transition: all 1s;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
 }
 
 /*input number dicliplina e integrada*/
 .input-two{
-	color: #000;
-	border: 1px solid #00FFFF;
-	font-size: 95%;
 	margin-top: 5%;
 	margin-bottom: 5%;
-	padding: 2%; 
-	border: 2px solid #FFF;
 	width: 23%;
 	height: 15%;
-	border-radius: 3px;
   display: none;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
-
 }
 /*The pseudos class*/
 input:invalid{
@@ -119,6 +114,10 @@ input:focus{
 	background: #008B8B;
 	color: #FFF;
   transition: all 1s;
+}
+
+::-webkit-input-placeholder {
+  color: #20B2AA;
 }
 
 /*The style of input-submit, input-buttons and links*/
