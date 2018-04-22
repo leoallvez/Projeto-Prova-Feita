@@ -1,5 +1,5 @@
 # Projeto-Prova-Feita
-Aplicação web feita para calculo e administração de notas da UMC.
+Aplicação web feita para o calculo das notas da UMC.
 
 
 <h2>Sobre:</h2>
